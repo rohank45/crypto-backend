@@ -44,6 +44,10 @@ cloudinary.config({
 const registerRoute = require("./routes/registerRoute");
 app.use("/", registerRoute);
 
+//login
+const loginRoute = require("./routes/loginRoute");
+app.use("/", loginRoute);
+
 //logout
 const logoutRoute = require("./routes/logoutRoute");
 app.use("/", logoutRoute);
